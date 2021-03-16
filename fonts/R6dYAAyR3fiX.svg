@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.5 36">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:none}.cls-1{stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="email-read-1" transform="translate(.25)">
+        <g id="Outline_Icons_1_" transform="translate(.75 2.25)">
+            <g id="Outline_Icons">
+                <g id="Group_3529" data-name="Group 3529">
+                    <g id="Group_3526" data-name="Group 3526" transform="translate(16.5 12)">
+                        <circle id="Ellipse_27" cx="9" cy="9" r="9" class="cls-1" data-name="Ellipse 27"/>
+                        <path id="Path_12503" d="M23.5 13.5l-6 6-3-3" class="cls-1" data-name="Path 12503" transform="translate(-10 -7.5)"/>
+                    </g>
+                    <g id="Group_3528" data-name="Group 3528">
+                        <g id="Group_3527" data-name="Group 3527">
+                            <path id="Path_12504" d="M14 22.5H2.75A2.252 2.252 0 0 1 .5 20.25V3.75A2.25 2.25 0 0 1 2.75 1.5h27A2.25 2.25 0 0 1 32 3.75v6.75" class="cls-1" data-name="Path 12504" transform="translate(-.5 -1.5)"/>
+                            <path id="Path_12505" d="M31.1 1.959L16.031 14.031.938 1.937" class="cls-1" data-name="Path 12505" transform="translate(-.281 -1.281)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g id="Invisible_Shape">
+            <path id="Rectangle_9279" d="M0 0h36v36H0z" class="cls-2" data-name="Rectangle 9279"/>
+        </g>
+    </g>
+</svg>
