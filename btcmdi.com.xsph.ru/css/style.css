@@ -1,4 +1,4 @@
-		html {
+html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%
 }
@@ -173,20 +173,6 @@ template {
 }
 
 @font-face {
-	font-family: HelveticaNeue;
-	font-style: normal;
-	font-weight: 900;
-	src: url(../fonts/yCPJ7kC4iEyB.eot) format("eot"), url(../fonts/HSe8zHRNtT1i.ttf) format("truetype")
-}
-
-@font-face {
-	font-family: Tinos;
-	font-style: normal;
-	font-weight: 400;
-	src: url(../fonts/gwJcw6XrqlJX.eot) format("eot"), url(../fonts/3dAfGaPm7jvh.ttf) format("truetype")
-}
-
-@font-face {
 	font-family: Tinos;
 	font-style: bold;
 	font-weight: 500;
@@ -198,34 +184,6 @@ template {
 	font-style: italic;
 	font-weight: 600;
 	src: url(../fonts/kvKT5YybFDiA.eot) format("eot"), url(../fonts/j2qp9fJP4vfA.ttf) format("truetype")
-}
-
-@font-face {
-	font-family: Tinos;
-	font-style: italic;
-	font-weight: 400;
-	src: url(../fonts/Iclykl0kNdPF.eot) format("eot"), url(../fonts/RMela2sAAHAr.ttf) format("truetype")
-}
-
-@font-face {
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: 400;
-	src: url(../fonts/GjfDOJMOBT0p.eot) format("eot"), url(../fonts/KE276zdGoTPT.ttf) format("truetype")
-}
-
-@font-face {
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: 500;
-	src: url(../fonts/zb6geUPmkcJS.eot) format("eot"), url(../fonts/e3Ts11laxgMW.ttf) format("truetype")
-}
-
-@font-face {
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: 600;
-	src: url(../fonts/TmI7wOLkx5OS.eot) format("eot"), url(../fonts/013nrhASz9wd.ttf) format("truetype")
 }
 
 .animate,
