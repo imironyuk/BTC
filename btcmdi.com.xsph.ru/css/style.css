@@ -1295,10 +1295,9 @@ template {
 }
 
 .inner {
-	width: calc(100% - 40px);
-	max-width: 1140px;
-	margin-left: auto;
-	margin-right: auto
+
+	margin-left: 50px;
+	margin-right: 50px
 }
 
 .wrapper {
@@ -1306,7 +1305,7 @@ template {
 }
 
 .wrapper--small-offset {
-	padding-top: 127px
+	padding-top: 100px
 }
 
 .wrapper--home {
@@ -1455,7 +1454,8 @@ template {
 
 .content-container,
 .content-sidebar {
-	font-size: 1rem
+	font-size: 1rem;
+    margin: 0px 0px 0px 0px;
 }
 
 .content-sidebar__box--with-bg {
@@ -5284,9 +5284,10 @@ textarea {
 
 .tview-chart {
 	clear: both;
-	padding: 15px;
-	border: 1px solid #e6e6e6;
-	height: 620px
+	padding: 0px;
+	border: 3px solid #61ffff;
+	height: 700px;
+	width: auto
 }
 
 .style-tabs ul {
@@ -5296,7 +5297,7 @@ textarea {
 
 .style-tabs ul li {
 	float: left;
-	border: 1px solid #e6e6e6;
+	border: 3px solid #61ffff;
 	padding: 10px 20px;
 	position: relative;
 	top: 2px;
@@ -5304,14 +5305,14 @@ textarea {
 }
 
 .style-tabs ul li a {
-	color: #131930;
+	color: #61ffff;
 	font-weight: 700
 }
 
 .style-tabs ul li.ui-state-active {
 	font-weight: 700;
 	border-bottom: none;
-	border-top: 1px solid #f3910f
+	border-top: 3px solid #61ffff
 }
 
 .analitics_head {
@@ -5630,7 +5631,7 @@ a.offset-anchor {
 		padding-right: 20px
 	}
 	.wrapper {
-		padding-top: 135px
+		padding-top: 0px
 	}
 	.wrapper--small-offset {
 		padding-top: 117px
