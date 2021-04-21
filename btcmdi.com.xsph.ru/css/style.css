@@ -175,7 +175,7 @@ template {
 .footer{
    position:fixed;
    bottom: -69px;
-   width: 94.35%;
+   width: calc(100% - 95px) ;
 	
 }
 
