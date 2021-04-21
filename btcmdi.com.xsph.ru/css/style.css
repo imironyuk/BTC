@@ -172,6 +172,13 @@ template {
 	display: none
 }
 
+.footer{
+   position:fixed;
+   bottom: -69px;
+   width: 95%;
+	
+}
+
 @font-face {
 	font-family: Tinos;
 	font-style: bold;
@@ -4651,6 +4658,7 @@ body.no-scroll {
 
 .flex,
 .flex-center {
+
 	display: -ms-flexbox;
 	display: flex
 }
@@ -5283,11 +5291,12 @@ textarea {
 }
 
 .tview-chart {
+    position: fixed;
 	clear: both;
 	padding: 0px;
 	border: 3px solid #61ffff;
-	height: 700px;
-	width: auto
+	height: calc(100% - 200px);
+    width: calc(100% - 100px);
 }
 
 .style-tabs ul {
@@ -5481,7 +5490,7 @@ a.offset-anchor {
 		padding-bottom: 40px
 	}
 	.services-nav__box {
-		width: 33.333%
+		width: 
 	}
 	.table__row:not(:last-child) .table__cell {
 		border-bottom: 1px solid rgba(41, 48, 77, .1)
@@ -5919,13 +5928,13 @@ a.offset-anchor {
 	}
 	.services-nav__title {
 		color: #fff;
-		font-size: 13px;
+		font-size: 18px;
 		font-weight: 500
 	}
 	.services-nav__description {
 		color: #fff;
 		opacity: .5;
-		font-size: 12px
+		font-size: 18px
 	}
 	.table-in-currency tbody .table__cell {
 		padding: 15px 12px
