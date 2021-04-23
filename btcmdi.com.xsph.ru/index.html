@@ -18,7 +18,7 @@
                     <nav class="nav flex flex--j-between flex--a-center">
                         <a class="nav__logo logo">
                             <img src="fonts/btc-consp-1240x580.jpg" alt class="logo__icon">
-			    </a>
+			            </a>
                         <div class="nav__list">
                            <h1>График BTC к USD</h1>  
 		       </div>
@@ -41,12 +41,13 @@
  <div class="wrapper wrapper--small-offset" style="padding-top: 100px;">                  
    <div class="content-wrapper">
      <main class="content-container" id="charts">
-        <div style="margin-bottom: 10px;">
+      
+        <div class="style-tabs">  
+		  <div style="margin-bottom: 10px;">
             <p>Онлайн график курса биткоина к доллару сша на бирже Bitstamp.</p>
-        </div>	
-        <div class="style-tabs">
+          </div>	
            <div class="tview-chart">
-                 <script type="text/javascript" src="https://s3.amazonaws.com/tradingview/tv.js"></script>
+		     <script type="text/javascript" src="https://s3.amazonaws.com/tradingview/tv.js"></script>
               <script type="text/javascript"> new TradingView.widget({ 
 				"autosize": true,
 				"height": 500, 
@@ -75,6 +76,7 @@
             <div id="subscribe-popover-container" class="onesignal-popover-container onesignal-reset slide-down">
 	       <div id="subscribe-popover-dialog" class="onesignal-popover-dialog">
 	       </div>
-	   </div>
+	     </div>
+            
        </body>
 </html>
