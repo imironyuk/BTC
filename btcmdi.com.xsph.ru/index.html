@@ -7,64 +7,78 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
     <meta name="HandheldFriendly" content="True">
     <meta http-equiv="cleartype" content="on">
-<link rel="icon" href="images.ico" type="image/x-icon">
-<link rel="stylesheet" id="style-common-css" href="css/style.css" type="text/css" media="all">
+	<link rel="icon" href="images.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/light-mode.css"  id="themere">
+	<link rel="stylesheet" href="css/line.css">
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
     <![endif]-->
+	<script src="js/animachion.js"></script>
  <header class="header">
-            <div class="header__navigations">
-                <div class="inner flex flex--j-between flex--a-center">
-                    <nav class="nav flex flex--j-between flex--a-center">
-                        <a class="nav__logo logo">
-                            <img src="fonts/btc-consp-1240x580.jpg" alt class="logo__icon">
-			            </a>
-                        <div class="nav__list">
-                           <h1>График BTC к USD</h1>  
-		       </div>
-                    </nav>
-                </div>
-            </div>
-            <div class="header__services services-nav" aria-hidden="true">
-                <div class="inner">
-                  <div class="services-nav__inner">
-
-        <div class="services-nav__text-box">
-            <div class="services-nav__description">График цены биткоина к доллару на бирже Bitstamp в реальном времени</div>
-        </div>
-      
+	<div class="header__navigations">			
+			<div class="inner flex flex--j-between flex--a-center">
+				<nav class="nav flex flex--j-between flex--a-center">
+					<a class="nav__logo logo">
+						<img src="fonts/btc-consp-1240x580.jpg" alt class="logo__icon">
+					</a>
+					<div class="nav__list">
+					<h1>График BTC к USD</h1>  
+				</div>
+			</nav>
+			   <div class="batton">
+				<button id="switchMode">Switch</button>	
 			</div>
-           </div>
-         </div>
-    </header>
+		</div>
+		
+	</div>
+</header>
         <!-- End Header -->
- <div class="wrapper wrapper--small-offset" style="padding-top: 100px;">                  
-   <div class="content-wrapper">
-     <main class="content-container" id="charts">
-      
-        <div class="style-tabs">  
-		  <div style="margin-bottom: 10px;">
-            <p>Онлайн график курса биткоина к доллару сша на бирже Bitstamp.</p>
-          </div>	
-           <div class="tview-chart">
+ <div class="wrapper wrapper--small-offset" style="padding-top: 100px;">  
+	<section class="seperator-wrapper">
+        <div class="seperator gradient">
+        </div>
+	</section> 
+		<div class="content-wrapper">
+			<main class="content-container" id="charts">
+				<div class="style-tabs">  
+				<div style="margin-bottom: 10px;">
+				<p>Онлайн график курса биткоина к доллару сша на бирже Bitstamp.</p>
+				</div>	
+				 <div class="tview-chart">
 		     <script type="text/javascript" src="https://s3.amazonaws.com/tradingview/tv.js"></script>
               <script type="text/javascript"> new TradingView.widget({ 
-				"autosize": true,
-				"height": 500, 
-				"hide_side_toolbar": false, 
-				"symbol": "BITSTAMP:BTCUSD", 
-				"interval": "1", 
-				"toolbar_bg": "#E4E8EB", 
-				"allow_symbol_change": false, 
-				"hideideas": false 
+			    "autosize": true,
+			   	"height": 500, 
+				"symbol": "BITSTAMP:BTCUSD",
+			    "interval": "1",
+			    "timezone": "Etc/UTC",
+			    "theme": "dark",
+			    "style": "1",
+			    "locale": "ru",
+			    "toolbar_bg": "#E4E8EB",
+		        "enable_publishing": false,
+			    "hide_legend": true,
+			    "withdateranges": true,
+			    "hide_side_toolbar": false,
+			    "save_image": false,
+		        "details": true,
+			    "container_id": "tradingview_b6b3c",
+			    "allow_symbol_change": false, 
+			    "hideideas": false 
 				}); 
                </script>
-            </div>
+             
+           </div>
          </div>
       </main>
    </div>
 </div>
 <div class=" footer inner flex flex--a-center flex--j-between ">
+ <style>
+   a { 
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+   } 
+  </style>
    <div class="footer__copyright">
       <span class="footer__text">© 2020-2021 MDI</span>
          </div>
@@ -76,7 +90,7 @@
             <div id="subscribe-popover-container" class="onesignal-popover-container onesignal-reset slide-down">
 	       <div id="subscribe-popover-dialog" class="onesignal-popover-dialog">
 	       </div>
-	     </div>
-            
+	     </div> 
+		
        </body>
 </html>
