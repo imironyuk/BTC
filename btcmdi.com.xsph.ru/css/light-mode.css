@@ -745,6 +745,55 @@ button:hover{
 	background: rgb(45, 50, 102);
 }
 
+.button-5 {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding: 15px 30px;
+    color: #000000;
+    border: 1px solid #000000;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: .3s linear;
+}
+.button-5:before, .button-5:after, .link-content:before, .link-content:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 15px;
+    height: 15px;
+    transition: .3s linear;
+}
+.button-5:before {
+    left: -1px;
+    top: -1px;
+    border-left: 1px solid #4bff00;
+    border-top: 1px solid #4bff00;
+}
+.button-5:after {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 1px solid #4bff00;
+    border-right: 1px solid #4bff00;
+}
+.link-content:after {
+    right: -1px;
+    top: -1px;
+    border-right: 1px solid #4bff00;
+    border-top: 1px solid #4bff00;
+}
+.link-content:before {
+    left: -1px;
+    bottom: -1px;
+    border-bottom: 1px solid #4bff00;
+    border-left: 1px solid #4bff00;
+}
+.button-5:hover {
+    color: #3037ffde;
+    border-color: #4bff00;
+}
+
 button,
 input,
 select,
@@ -790,7 +839,7 @@ img {
     position: fixed;
 	clear: both;
 	padding: 0px;
-	border: 3px solid #61ffff;
+	border: 3px solid #f5f6fa;
 	height: calc(100% - 200px);
     width: calc(100% - 100px);
 }
