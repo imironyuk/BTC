@@ -139,8 +139,8 @@
     display: block;
 	}
 	h1 {
-	font-size: 2em;
-	margin: 1.3em;
+	font-size: 2.4em;
+	margin: 0.96em;
 	}
 	.wrapper {
 	padding-top: 78px
@@ -186,6 +186,7 @@
 	.nav__item:not(:last-child) {
 		margin-right: 20px
 	}
+	.nav__list
 }
 @media  only screen and (max-width: 360px) {
 	.logo__icon {
