@@ -8,7 +8,7 @@
 
 }
 
-@media  only screen and (max-width: 620px) {
+@media  only screen and (max-width: 690px) {
 	.logo__icon {
     width: 0px;
     height: 40px;
@@ -32,7 +32,7 @@
 
 }
 
-@media  only screen and (max-width: 500px) {
+@media  only screen and (max-width: 574px) {
 	.logo__icon {
     width: 0px;
     height: 40px;
@@ -55,3 +55,64 @@
 		margin-right: 20px
 
 }
+
+@media  only screen and (max-width: 500px) {
+	.logo__icon {
+    width: 0px;
+    height: 40px;
+    display: block;
+	}
+	.mobile-visible {
+		display: none
+	}
+	.nav__list {
+		font-size: 0em;
+		font-size: 9px;
+		padding-top: 9px;
+		padding-bottom: 9px;
+		margin-left: 20px
+	}
+	.nav__item:not(:last-child) {
+		margin-right: 20px
+	}
+}
+
+
+@media  only screen and (max-width: 450px) {
+	.logo__icon {
+    width: 0px;
+    height: 40px;
+    display: block;
+	}
+	.mobile-visible {
+		display: none
+	}
+	.nav__list {
+		font-size: 0em;
+		font-size: 7px;
+		padding-top: 9px;
+		padding-bottom: 9px;
+		margin-left: 20px
+	}
+	.nav__item:not(:last-child) {
+		margin-right: 20px
+	}
+}
+@media  only screen and (max-width: 410px) {
+	.logo__icon {
+    width: 0px;
+    height: 40px;
+    display: block;
+	}
+	.mobile-visible {
+		display: none
+	}
+	.nav__list {
+		font-size: 0em;
+		font-size: 6px;
+		padding-top: 9px;
+		padding-bottom: 9px;
+		margin-left: 20px
+	}
+	.nav__item:not(:last-child) {
+		margin-right: 20px
