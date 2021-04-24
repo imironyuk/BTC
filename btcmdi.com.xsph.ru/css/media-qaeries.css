@@ -3,8 +3,10 @@
     width: 130px;
     height: auto;
     display: block;
-}
-
+	}
+	.wrapper {
+	padding-top: 90px
+	}
 
 }
 
@@ -17,6 +19,9 @@
 	.heder{
 	font-size: 16px;
 	}
+	.wrapper {
+	padding-top: 90px
+}
 	.mobile-visible {
 		display: none
 	}
@@ -40,6 +45,9 @@
 	}
 	.heder{
 	font-size: 12px;
+	}
+	.wrapper {
+	padding-top: 79px
 	}
 	.mobile-visible {
 		display: none
@@ -65,6 +73,9 @@
 	.mobile-visible {
 		display: none
 	}
+	.wrapper {
+	padding-top: 78px
+	}
 	.nav__list {
 		font-size: 0em;
 		font-size: 9px;
@@ -84,6 +95,8 @@
     height: 40px;
     display: block;
 	}
+	.eyreyr{
+	  bottom: -6px;
 	.mobile-visible {
 		display: none
 	}
@@ -98,11 +111,37 @@
 		margin-right: 20px
 	}
 }
-@media  only screen and (max-width: 410px) {
+@media  only screen and (max-width: 450px) {
 	.logo__icon {
     width: 0px;
     height: 40px;
     display: block;
+	}
+	.wrapper {
+	padding-top: 78px
+	}
+	.mobile-visible {
+		display: none
+	}
+	.nav__list {
+		font-size: 0em;
+		font-size: 6px;
+		padding-top: 9px;
+		padding-bottom: 9px;
+		margin-left: 20px
+	}
+	.nav__item:not(:last-child) {
+		margin-right: 20px
+	}
+}
+@media  only screen and (max-width: 389px) {
+	.logo__icon {
+    width: 0px;
+    height: 40px;
+    display: block;
+	}
+	.wrapper {
+	padding-top: 79px
 	}
 	.mobile-visible {
 		display: none

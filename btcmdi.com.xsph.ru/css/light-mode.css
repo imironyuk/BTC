@@ -179,7 +179,7 @@ template {
 }
 
 .wrapper {
-	padding-top: 200px
+	padding-top: 100px
 }
 
 .content-header {
@@ -261,6 +261,7 @@ template {
 .footer__text {
 	font-size: 14px;
 	color: rgba(41, 48, 77, .5)
+	
 }
 
 .footer__copyright,
@@ -271,7 +272,7 @@ template {
 }
 
 .footer__copyright {
-	width: 322px
+	width: calc(100%-200px);
 }
 
 .footer__link {
