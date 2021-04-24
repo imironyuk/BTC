@@ -23,6 +23,10 @@ pre {
 	font-size: 1em
 }
 
+div {
+	transition: 1s;
+}
+
 p,
 h1,
 h2,
@@ -314,7 +318,6 @@ template {
 }
 
 .header {
-	transition: 1s;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -626,8 +629,9 @@ html {
 	-webkit-font-smoothing: antialiased
 }
 
+
 body {
-	transition: 1s;
+	transition: 2s;
 	font-family: Roboto, Arial, sans-serif;
 	color: #29304d;
 	line-height: 1.42857;
