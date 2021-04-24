@@ -23,7 +23,17 @@ pre {
 	font-size: 1em
 }
 
+p,
+h1,
+h2,
+hl,
+span,
 a {
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 	background-color: transparent
 }
 
@@ -319,7 +329,6 @@ template {
 }
 
 .header__navigations {
-	padding-top: 15px;
 	padding-bottom: 15px;
 	background-color: #f5f6fa
 }
@@ -368,8 +377,6 @@ template {
 }
 
 .nav__list {
-	padding-top: 9px;
-	padding-bottom: 9px
 }
 
 .modal__container .nav__list {
@@ -665,6 +672,9 @@ body.no-scroll {
 	align-items: center
 }
 
+.batton{
+	padding-top: 12px
+}
 
 button {
 	cursor: pointer;
@@ -684,6 +694,7 @@ button:hover{
 }
 
 .button-5 {
+	cursor: pointer;
     text-decoration: none;
     display: inline-block;
     position: relative;
@@ -706,30 +717,30 @@ button:hover{
 .button-5:before {
     left: -1px;
     top: -1px;
-    border-left: 1px solid #4bff00;
-    border-top: 1px solid #4bff00;
+    border-left: 1px solid #ff0000;
+    border-top: 1px solid #ff0000;
 }
 .button-5:after {
     bottom: -1px;
     right: -1px;
-    border-bottom: 1px solid #4bff00;
-    border-right: 1px solid #4bff00;
+    border-bottom: 1px solid #ff0000;
+    border-right: 1px solid #ff0000;
 }
 .link-content:after {
     right: -1px;
     top: -1px;
-    border-right: 1px solid #4bff00;
-    border-top: 1px solid #4bff00;
+    border-right: 1px solid #ff0000;
+    border-top: 1px solid #ff0000;
 }
 .link-content:before {
     left: -1px;
     bottom: -1px;
-    border-bottom: 1px solid #4bff00;
-    border-left: 1px solid #4bff00;
+    border-bottom: 1px solid #ff0000;
+    border-left: 1px solid #ff0000;
 }
 .button-5:hover {
-    color: #3037ffde;
-    border-color: #4bff00;
+    color: #990100;
+    border-color: #ff0000;
 }
 
 button,
@@ -743,7 +754,9 @@ input::-ms-clear {
 	display: none
 }
 
-h1,
+h1{
+	margin-left: 50px;
+}
 h2,
 h3,
 h4,

@@ -4,17 +4,25 @@
     height: auto;
     display: block;
 	}
+	h1 {
+	font-size: 2em;
+	margin: .51em;
+	}
 	.wrapper {
 	padding-top: 90px
 	}
 
 }
 
-@media  only screen and (max-width: 690px) {
+@media  only screen and (max-width: 715px) {
 	.logo__icon {
     width: 0px;
     height: 40px;
     display: block;
+	}
+	h1 {
+	font-size: 2em;
+	margin: .23em;
 	}
 	.heder{
 	font-size: 16px;
@@ -37,11 +45,15 @@
 
 }
 
-@media  only screen and (max-width: 574px) {
+@media  only screen and (max-width: 588px) {
 	.logo__icon {
     width: 0px;
     height: 40px;
     display: block;
+	}
+	h1 {
+	font-size: 2em;
+	margin: .32em;
 	}
 	.heder{
 	font-size: 12px;
@@ -64,7 +76,7 @@
 
 }
 
-@media  only screen and (max-width: 500px) {
+@media  only screen and (max-width: 513px) {
 	.logo__icon {
     width: 0px;
     height: 40px;
@@ -72,6 +84,10 @@
 	}
 	.mobile-visible {
 		display: none
+	}
+	h1 {
+	font-size: 2em;
+	margin: .63em;
 	}
 	.wrapper {
 	padding-top: 78px
@@ -89,14 +105,19 @@
 }
 
 
-@media  only screen and (max-width: 450px) {
+@media  only screen and (max-width: 467px) {
 	.logo__icon {
     width: 0px;
     height: 40px;
     display: block;
 	}
+	h1 {
+	font-size: 2em;
+	margin: 1.04em;
+	}
 	.eyreyr{
 	  bottom: -6px;
+	}
 	.mobile-visible {
 		display: none
 	}
@@ -117,6 +138,10 @@
     height: 40px;
     display: block;
 	}
+	h1 {
+	font-size: 2em;
+	margin: 1.3em;
+	}
 	.wrapper {
 	padding-top: 78px
 	}
@@ -134,7 +159,7 @@
 		margin-right: 20px
 	}
 }
-@media  only screen and (max-width: 389px) {
+@media  only screen and (max-width: 420px) {
 	.logo__icon {
     width: 0px;
     height: 40px;
@@ -146,12 +171,45 @@
 	.mobile-visible {
 		display: none
 	}
+	h1 {
+	font-size: 2em;
+	margin: 1.3em;
+	}
 	.nav__list {
 		font-size: 0em;
 		font-size: 6px;
 		padding-top: 9px;
 		padding-bottom: 9px;
-		margin-left: 20px
+		margin-left: -40px;
+		margin-top: 1px
+	}
+	.nav__item:not(:last-child) {
+		margin-right: 20px
+	}
+}
+@media  only screen and (max-width: 360px) {
+	.logo__icon {
+    width: 0px;
+    height: 40px;
+    display: block;
+	}
+	.wrapper {
+	padding-top: 79px
+	}
+	.mobile-visible {
+		display: none
+	}
+	h1 {
+	font-size: 2em;
+	margin: 1.3em;
+	}
+	.nav__list {
+		font-size: 0em;
+		font-size: 6px;
+		padding-top: 9px;
+		padding-bottom: 9px;
+		margin-left: -40px;
+		margin-top: 1px
 	}
 	.nav__item:not(:last-child) {
 		margin-right: 20px

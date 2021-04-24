@@ -83,6 +83,21 @@ template {
 	display: none
 }
 
+
+p,
+h1,
+h2,
+hl,
+span,
+a {
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	background-color: transparent
+}
+
 .footer{
    position:fixed;
    bottom: -69px;
@@ -319,7 +334,6 @@ template {
 }
 
 .header__navigations {
-	padding-top: 15px;
 	padding-bottom: 15px;
 	background-color: #010206
 }
@@ -432,8 +446,7 @@ template {
 }
 
 .nav__list {
-	padding-top: 9px;
-	padding-bottom: 9px
+
 }
 
 .modal__container .nav__list {
@@ -727,6 +740,9 @@ body.no-scroll {
 	align-items: center
 }
 
+.batton{
+	padding-top: 12px
+}
 
 button {
 	cursor: pointer;
@@ -746,6 +762,7 @@ button:hover{
 }
 
 .button-5 {
+	cursor: pointer;
     text-decoration: none;
     display: inline-block;
     position: relative;
@@ -805,7 +822,9 @@ input::-ms-clear {
 	display: none
 }
 
-h1,
+h1{
+	margin-left: 50px;
+}
 h2,
 h3,
 h4,
