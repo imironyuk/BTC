@@ -12,19 +12,21 @@
 	<link rel="stylesheet" href="css/dark-mode.css"  id="themere" type="text/css" >
 	<link rel="stylesheet" href="css/media-qaeries.css"  type="text/css" >
 	<link rel="stylesheet" href="css/line.css">
+	<script src="js/jquery-1.7.2.js"></script>
 </head>
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
     <![endif]-->
 	<script src="js/animachion.js"></script>
  <header class="header">
-	<div class="header__navigations">			
-			<div class="head inner flex flex--j-between flex--a-center">
-				<nav class="nav flex flex--j-between flex--a-center">
-					<a class="nav__logo logo">
+		<h1 class="header_sloy">НАЖМИ ЧТОБЫ СВЕРНУТЬ </h1>
+			<div class="header__navigations">			
+				<div class="head inner flex flex--j-between flex--a-center">
+					<nav class="nav flex flex--j-between flex--a-center">
+						<a class="nav__logo logo">
 						<img src="fonts/btc-consp-1240x580.jpg" alt class="logo__icon">
-					</a>
-					<div class="nav__list">
+						</a>
+						<div class="nav__list">
 					<h1>График BTC<p class="123456">в реальном времени</p></h1>
 				</div>
 			</nav>
@@ -50,6 +52,12 @@
 			</ul>
 		</div>	
 	</div>
+	<script>
+    $(".header_sloy").click(function () {
+      $(this).siblings(".header__navigations").slideToggle("slow");
+	  $(this).siblings(".seperator gradient").slideToggle("slow");
+    });
+</script>
 </header>
 
         <!-- End Header -->
@@ -65,8 +73,8 @@
 				<p>Онлайн график курса биткоина к доллару сша на бирже Bitstamp.</p>
 				</div>	
 				 <div class="tview-chart">
-		     <script type="text/javascript" src="https://s3.amazonaws.com/tradingview/tv.js"></script>
-              <script type="text/javascript"> new TradingView.widget({ 
+			<script type="text/javascript" src="https://s3.amazonaws.com/tradingview/tv.js"></script>
+			<script type="text/javascript"> new TradingView.widget({ 
 			    "autosize": true,
 			   	"height": 500, 
 				"symbol": "BITSTAMP:BTCUSD",
@@ -87,7 +95,6 @@
 			    "hideideas": false 
 				}); 
                </script>
-             
            </div>
          </div>
       </main>
