@@ -1,15 +1,25 @@
 html {
 	line-height: 1.15;
-	-webkit-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%;
+	
 }
 
+.head{
+	padding-top: 13px;
+	padding-bottom: 2px;
+}
+
+p{
+	font-size: 16px
+}
 body {
+
 	margin: 0
 }
 
 h1 {
 	font-size: 2em;
-	margin: .67em 0
+	margin-left: .67em;
 }
 
 hr {
@@ -101,6 +111,51 @@ a {
 	user-select: none;
 	background-color: transparent
 }
+
+
+
+ul,
+li,
+a{
+	transition: 1s
+}
+
+#navbar ul {
+  display: none;
+  background-color: #f90;
+  position: absolute;
+  top: 100%;
+}
+#navbar li:hover ul { display: block; }
+#navbar, #navbar ul {
+  margin-left: calc(100% - 950px) ;
+  padding: 0;
+  list-style-type: none;
+}
+#navbar {
+  height: 35px;
+  background-color: #010206;
+  min-width: 200px;
+}
+#navbar li {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+#navbar li a {
+	font-style:italic;
+	transform: 1s;
+	font-size: 20px;
+	display: block;
+	padding: 6px;
+	width: 100px;
+	color: #127472;
+	text-decoration: none;
+	text-align: center;
+}
+#navbar ul li { float: none; }
+#navbar li:hover { background-color: #f90; }
+#navbar ul li:hover { background-color: #010206; }
 
 .footer{
    position:fixed;
@@ -327,9 +382,6 @@ a {
 	will-change: transform
 }
 
-.header[aria-hidden=true] {
-	transform: translateY(-70px)
-}
 
 .header__navigations {
 	padding-bottom: 15px;
@@ -737,7 +789,7 @@ body.no-scroll {
 }
 
 .batton{
-	padding-top: 12px
+	padding-top: 1px
 }
 
 button {
