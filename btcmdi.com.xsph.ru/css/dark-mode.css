@@ -384,6 +384,10 @@ a{
 	will-change: transform
 }
 
+.header_sloy{
+	font-size: 10px
+	
+}
 
 .header__navigations {
     height: 103px;
