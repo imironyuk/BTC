@@ -772,8 +772,6 @@ a{
 
 .scroll-element .scroll-bar,
 .scroll-element .scroll-element_track {
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-	filter: alpha(opacity=40);
 	opacity: .4
 }
 
