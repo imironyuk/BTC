@@ -6,6 +6,7 @@ const theme = document.querySelector("#theme");
 
 // Хранение переменной "dark.css" для нового пользователя
 if (!localStorage.theme) localStorage.theme = "css/dark.css"
+
 // сменим "herf" на значение сохраненного значени е переменной в "localStorage.theme"
 theme.href = localStorage.theme
 
@@ -13,7 +14,6 @@ theme.href = localStorage.theme
 	document.getElementById("switchMode").onclick = function () {
 
 		// Если текущий урл содержит "dark.css"
-
 		if (theme.getAttribute("href") == "css/dark.css") {
 
 			// тогда переключим его на "light.css"
