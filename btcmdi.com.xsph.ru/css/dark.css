@@ -179,7 +179,7 @@ a{
 }
 #navbar li:hover ul { display: block; }
 #navbar, #navbar ul {
-  margin-left: calc(100% - 950px) ;
+  margin-left: calc(100% - 1100px) ;
   padding: 0;
   list-style-type: none;
 }
@@ -772,6 +772,8 @@ a{
 
 .scroll-element .scroll-bar,
 .scroll-element .scroll-element_track {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+	filter: alpha(opacity=40);
 	opacity: .4
 }
 
@@ -987,6 +989,10 @@ img {
 	border: 3px solid #61ffff;
 	height: calc(100% - 200px);
     width: calc(100% - 100px);
+}
+
+.tview-chart1{
+	display:none;
 }
 
 .style-tabs ul {
