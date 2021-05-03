@@ -1,38 +1,37 @@
-// Селектор кнопки 
-const btn = document.querySelector("#switchMode");
-
-// Селектор таблицы стилей <link>
 const theme = document.querySelector("#theme");
 
-// Хранение переменной "dark.css" для нового пользователя
+
+// Значение для переменной "theme" по умолчанию "dark.css"
 if (!localStorage.theme) localStorage.theme = "css/dark.css"
 
-// сменим "herf" на значение сохраненного значени е переменной в "localStorage.theme"
+// Определяем значение переменной "herf" на значение сохраненное локально в: "localStorage.theme"
 theme.href = localStorage.theme
 
-	// Клик по кнопке
 	document.getElementById("switchMode").onclick = function () {
 
 		// Если текущий урл содержит "dark.css"
 		if (theme.getAttribute("href") == "css/dark.css") {
-
-			// тогда переключим его на "light.css"
-			theme.href = "css/light.css";
-
-                               // сохраним значение стиля в переменную "theme_cookie"
+		let gr2 = document.querySelector("#btc");
+		let gr1 = document.querySelector("#btc1");
+				gr2.classList.remove("tview-chart");
+				gr2.classList.add("tview-chart1");
+				gr1.classList.remove("tview-chart1");
+				gr1.classList.add("tview-chart");
+				theme.href = "css/light.css";
 				var theme_cookie = "css/light.css";
-
-		// Иначе
+				
+				
 		} else {
-
-			// переключаем его на "dark.css"
-			theme.href = "css/dark.css";
-
-                                // сохраним значение стиля в переменну "theme_cookie"
+		let gr1 = document.querySelector("#btc1");
+		let gr2 = document.querySelector("#btc");
+				gr2.classList.remove("tview-chart1");
+				gr2.classList.add("tview-chart");
+				gr1.classList.remove("tview-chart");
+				gr1.classList.add("tview-chart1");
+				theme.href = "css/dark.css";
 				var theme_cookie = "css/dark.css";
 		}
 
-		// Пример использования:
 		localStorage.setItem('theme', theme_cookie);
 
 	};
