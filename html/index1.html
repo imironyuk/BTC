@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+     <title>График BTC к RUB </title>
+    <meta name="title" content="График BTC к USD">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <meta name="HandheldFriendly" content="True">
+    <meta http-equiv="cleartype" content="on">
+	<link rel="icon" href="images.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/dark.css" id="theme">
+	<link rel="stylesheet" href="css/media-qaeries.css"  type="text/css" >
+	<link rel="stylesheet" href="css/line.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script>
+	$(document).ready ( function(){
+		if(localStorage.getItem('theme') == 'css/light.css') { 
+			let gr1 = document.querySelector("#btc1");
+			let gr2 = document.querySelector("#btc");
+			gr1.className ="tview-chart";
+			gr2.className ="tview-chart1";
+		}});
+	</script>
+</head>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+    <![endif]-->
+ <header class="header">
+	<div class="header__navigations">			
+			<div class="head inner flex flex--j-between flex--a-center">
+				<nav class="nav flex flex--j-between flex--a-center">
+					<a class="nav__logo logo">
+						<img src="fonts/btc-consp-1240x580.jpg" alt class="logo__icon">
+					</a>
+					<div class="nav__list">
+					<h1>График BTC<p>в реальном времени</p></h1>
+				</div>
+			</nav>
+			<ul class="meuuu" id="navbar">
+					<li><a href="index.html">BTCUSD</a></li>
+					<li><a href="index1.html">BTCRUB</a></li>
+					<li><a href="#">О нас</a></li>
+				</ul>
+			   <div class="batton">
+				<a id="switchMode" class="button-5"><span class="link-content">Сменить тему</span></a>		
+				<script type="text/javascript" src="js/style.js" ></script>
+			</div>
+		</div>
+			<div class="hamburger-menu">
+			<input id="menu__toggle" type="checkbox" />
+			<label class="menu__btn" for="menu__toggle">
+			<span></span>
+			</label>
+			<ul class="menu__box">
+				<li><a class="menu__item" href="index.html">BTCUSD</a></li>
+				<li><a class="menu__item" href="index1.html">BTCRUB</a></li>
+				<li><a class="menu__item" href="#">О нас</a></li>
+			</ul>
+		</div>	
+	</div>
+</header>
+        <!-- End Header -->
+ <div class="wrapper wrapper--small-offset">  
+		<section class="seperator-wrapper">
+			<div class="seperator gradient">	  
+			</div>
+		</section> 
+		<div class="content-wrapper">
+		
+			<main class="content-container" id="charts">
+				<div class="style-tabs">  
+				<div style="margin-bottom: 10px;">
+				<p>Онлайн график курса биткоина к доллару сша на бирже Bitstamp.</p>
+				</div>	
+			<div class="tview-chart"id="btc">
+				<script type="text/javascript" src="https://s3.amazonaws.com/tradingview/tv.js"></script>
+				<script type="text/javascript"> new TradingView.widget({ 
+					"autosize": true,
+					"height": 500, 
+					"symbol": "CAPITALCOM:BTCRUB",
+					"interval": "1",
+					"theme": "dark",
+					"style": "1",
+					"locale": "ru",
+					"toolbar_bg": "#E4E8EB",
+					"watchlist": "CAPITALCOM:BTCRUB",
+					"enable_publishing": false,
+					"hide_legend": true,
+					"withdateranges": true,
+					"hide_side_toolbar": false,
+					"save_image": false,
+					"details": true,
+					"container_id": "tradingview_b6b3c",
+					"allow_symbol_change": false, 
+					"hideideas": false 
+					}); 
+				</script>
+			</div>
+			<div class="tview-chart1" id="btc1">
+				<script type="text/javascript" src="https://s3.amazonaws.com/tradingview/tv.js"></script>
+				<script type="text/javascript"> new TradingView.widget({ 
+					"autosize": true,
+					"height": 500, 
+					"symbol": "CAPITALCOM:BTCRUB",
+					"interval": "1",
+					"theme": "light",
+					"style": "1",
+					"locale": "ru",
+					"toolbar_bg": "#E4E8EB",
+					"enable_publishing": false,
+					"hide_legend": true,
+					"withdateranges": true,
+					"hide_side_toolbar": false,
+					"save_image": false,
+					"details": true,
+					"container_id": "tradingview_b6b3c",
+					"allow_symbol_change": false, 
+					"hideideas": false 
+					}); 
+				</script>
+			</div>
+         </div>
+      </main>
+   </div>
+</div>
+<div class=" footer inner flex flex--a-center flex--j-between ">
+ <style>
+   a { 
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+   } 
+  </style>
+   <div class="footer__copyright">
+      <span class="footer__text">© 2020-2021 MDI</span>
+         </div>
+            <div class="footer__links">
+               <a href="https://vk.com/daniilmironyuk" class="footer__link">Миронюк Даниил Игоревич 4ПКС14</a>
+            </div>
+         </div>
+         <div id="footer_cont"></div>
+            <div id="subscribe-popover-container" class="onesignal-popover-container onesignal-reset slide-down">
+	       <div id="subscribe-popover-dialog" class="onesignal-popover-dialog">
+	       </div>
+	     </div> 
+      </body>
+</html>
