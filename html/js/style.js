@@ -2,7 +2,6 @@ const theme = document.querySelector("#theme");
 // Значение для переменной "theme" по умолчанию "dark.css"
 if (!localStorage.theme) localStorage.theme = "css/dark.css"
 // Определяем значение переменной "herf" на значение сохраненное локально в: "localStorage.theme"
-theme.href = localStorage.theme 
 
 	document.getElementById("switchMode").onclick = function () {
 
